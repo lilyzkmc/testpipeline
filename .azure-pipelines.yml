@@ -5,7 +5,9 @@ pool:
   name: Pool
 
 jobs:
-- job: AlwaysSuccess
+- job: FailJob
   steps:
-    - script: echo "This pipeline always succeeds"
-      displayName: 'Print success message'
+    - script: |
+        echo "This will fail now"
+        exit 1
+      displayName: "Intentional failure step"
