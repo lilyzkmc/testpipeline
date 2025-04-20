@@ -2,7 +2,7 @@ trigger:
 - main  # or any branch you want
 
 pool:
-  name: Default
+  name: Pool
 
 jobs:
 - job: AlwaysSuccess
