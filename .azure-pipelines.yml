@@ -1,0 +1,11 @@
+trigger:
+- main  # or any branch you want
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: AlwaysSuccess
+  steps:
+    - script: echo "This pipeline always succeeds"
+      displayName: 'Print success message'
