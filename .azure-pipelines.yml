@@ -2,7 +2,7 @@ trigger:
 - main  # or any branch you want
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: Default
 
 jobs:
 - job: AlwaysSuccess
